@@ -1,5 +1,7 @@
 
-# dsj-react-native-android-broadcast-receiver
+# react-native-android-broadcast-receiver
+
+# FOR SUNMI POS Device ONLY
 
 ## Getting started
 
