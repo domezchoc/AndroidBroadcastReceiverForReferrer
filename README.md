@@ -1,16 +1,15 @@
 
-# react-native-android-broadcast-receiver-for-referrer
+# dsj-react-native-android-broadcast-receiver
 
 ## Getting started
 
-`$ npm install react-native-android-broadcast-receiver-for-referrer --save`
+`$ npm install dsj-react-native-android-broadcast-receiver --save`
 
 ### Mostly automatic installation
 
-`$ react-native link react-native-android-broadcast-receiver-for-referrer`
+`$ react-native link dsj-react-native-android-broadcast-receiver`
 
 ### Manual installation
-
 
 #### Android
 
