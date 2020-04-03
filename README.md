@@ -37,7 +37,7 @@
 						android:enabled="true"
 						android:exported="true">
 						<intent-filter>
-							<action android:name="com.android.vending.INSTALL_REFERRER"/>
+							<action android:name="com.sunmi.scanner.ACTION_DATA_CODE_RECEIVED"/>
 						</intent-filter>
         			</receiver>
    			</application>
