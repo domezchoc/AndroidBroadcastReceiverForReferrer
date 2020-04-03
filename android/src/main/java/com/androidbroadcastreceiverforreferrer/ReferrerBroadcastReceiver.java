@@ -14,12 +14,15 @@ import com.facebook.react.modules.core.DeviceEventManagerModule;
 
 import java.util.Set;
 
+import android.widget.Toast;
+
 /**
  * Created by shivam.aditya on 08-01-2018.
  */
 
 public class ReferrerBroadcastReceiver extends BroadcastReceiver {
-    public static final String INSTALL_ACTION = "com.android.vending.INSTALL_REFERRER";
+    //public static final String INSTALL_ACTION = "com.android.vending.INSTALL_REFERRER";
+    public static final String INSTALL_ACTION = "com.sunmi.scanner.ACTION_DATA_CODE_RECEIVED";
     public static String referrer;
 
     private static void savePreference(Context context, String key, Object value) {
@@ -56,13 +59,16 @@ public class ReferrerBroadcastReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-
         if (!INSTALL_ACTION.equals(intent.getAction())) {
             return;
         }
 
-        referrer = intent.getStringExtra("referrer");
-        Log.d("ReactNativeJS", "ReferrerBroadcastReceiver referrer: " + referrer);
+        //Log.d("ReactNativeJS","Exception in sendEvent in ReferrerBroadcastReceiver is:"+intent.getAction());
+
+        referrer = intent.getStringExtra("data");
+        //Log.d("ReactNativeJS", "ReferrerBroadcastReceiver referrer: " + referrer);
+
+        Toast.makeText(context, referrer, Toast.LENGTH_SHORT).show();
 
         WritableMap map = new WritableNativeMap();
         map.putString("referrer", referrer);
