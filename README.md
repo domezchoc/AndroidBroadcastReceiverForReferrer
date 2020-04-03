@@ -5,11 +5,11 @@
 
 ## Getting started
 
-`$ npm install dsj-react-native-android-broadcast-receiver --save`
+`$ npm install react-native-android-broadcast-receiver --save`
 
 ### Mostly automatic installation
 
-`$ react-native link dsj-react-native-android-broadcast-receiver`
+`$ react-native link react-native-android-broadcast-receiver`
 
 ### Manual installation
 
